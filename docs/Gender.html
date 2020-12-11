@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Game</title>
+<style>
+@font-face {
+    font-family: "BebasNeue";
+    src: url(BebasNeue-Regular.otf);
+} 
+body {
+  background: #202020;
+}
+p{
+    font-family: BebasNeue;
+    font-size: 80px;
+    color: #DB202C;
+    text-align: center;
+    margin: 0;
+    }
+li {
+  float: left;
+  opacity: 0.7;
+  color: dodgerblue;
+  font-family: BebasNeue;
+  font-size:48px;
+  text-align: center;
+  display: block;
+  list-style: none;
+  width: 200px;
+  height: 200px;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+li:nth-child(1) {
+  background-image: url(Workspace/Frow.png);
+}
+li:nth-child(2) {
+  background-image: url(Workspace/Frow.png);
+}
+
+ul:hover li {
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
+}
+ul:hover li:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  transition-duration: 0.1818181818s;
+}
+ul:hover li:hover ~ li {
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%);
+}
+#one{
+        padding:30px;
+        margin-top: 10px;
+    }
+#two{
+        padding:30px;
+        margin: 10px;
+    }
+    #choice{
+        text-align: center;
+        margin-left:25%;
+        margin-top:3%;
+    }
+</style>
+</head>
+<body>
+<p>What would you choose to be?</p>
+<div id="choice">
+<ul>
+<li id="one">Male</li>
+<li id="two">Female</li>
+</ul>
+</div>
+</body>
+</html>
