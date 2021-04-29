@@ -1,0 +1,256 @@
+<html>
+    <head>
+    <title>Vision</title>
+        <meta name= viewport content= "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">    
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+             var i = 0;
+             var txt = 'The Seven Deadly Sins';
+             var speed = 60;
+             function typeWriter() {
+            if (i < txt.length) {
+            document.getElementById("sins").innerHTML += txt.charAt(i);
+                i++;
+            setTimeout(typeWriter, speed);
+            }
+             }
+    </script>
+    <style>
+            header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('images/Paper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+            }
+        }
+    #set{
+        position: relative;
+        font-family: 'Kaushan Script', cursive;
+        font-size:32px;
+        text-align: center;
+        color:darkred;
+        margin: 0;
+        }
+        .box-content {
+    margin: 0;
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.bottom {
+    border-bottom: 2px ridge darkred;
+    color: #c0c0c0;
+}
+
+.right {
+    border-right: 2px ridge darkred;
+    color: #c0c0c0;
+}
+        .left{
+            position: fixed;
+            color: #c0c0c0;
+        }
+    .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+
+    .se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100vh;
+	z-index: 100;
+    text-align: center;
+	background: url(spinner.gif) center no-repeat rgb(12,12,12);
+}
+        
+.circle-container {
+  position: relative;
+  /* 1 */
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  list-style: none;
+  /* 2 */
+  box-sizing: content-box;
+  /* 3 */
+  margin:0;
+  text-align: center;
+}
+.circle-container > * {
+  /* 4 */
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 7em;
+  height: 7em;
+  margin: -3em;
+}
+.circle-container > :nth-of-type(1) {
+  transform: rotate(0deg) translate(10em) rotate(0deg);
+}
+.circle-container > :nth-of-type(2) {
+  transform: rotate(51.42deg) translate(10em) rotate(-51.42deg);
+}
+.circle-container > :nth-of-type(3) {
+  transform: rotate(102.85deg) translate(10em) rotate(-102.85deg);
+}
+.circle-container > :nth-of-type(4) {
+  transform: rotate(154.28deg) translate(10em) rotate(-154.28deg);
+}
+.circle-container > :nth-of-type(5) {
+  transform: rotate(205.71deg) translate(10em) rotate(-205.71deg);
+}
+.circle-container > :nth-of-type(6) {
+  transform: rotate(257.14deg) translate(10em) rotate(-257.14deg);
+}
+.circle-container > :nth-of-type(7) {
+  transform: rotate(308.57deg) translate(10em) rotate(-308.57deg);
+}
+.circle-container img {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+  filter: grayscale(85%);
+}
+            .video-play-button {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: content-box;
+  display: block;
+  width: 32px;
+  height: 44px;
+  /* background: #fa183d; */
+  border-radius: 50%;
+  padding: 18px 20px 18px 28px;
+}
+
+.video-play-button:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #ba1f24;
+  border-radius: 50%;
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-play-button:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #fa183d;
+  border-radius: 50%;
+  transition: all 2000ms;
+}
+
+.video-play-button:hover:after {
+  background-color: darken(#fa183d, 10%);
+}
+
+.video-play-button img {
+  position: relative;
+  z-index: 3;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.video-play-button span {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 32px solid #fff;
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+.circle-container img:hover {
+  filter: grayscale(0);
+}
+    </style>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+        <script>
+            $(window).load(function() {
+		$(".se-pre-con").fadeOut("slow");
+	});
+        </script>
+    </head>
+    <body onload="typeWriter()">
+    <div class="se-pre-con"></div>
+        <header>            <nav>
+                <div class="row clearfix">
+                   <a href="index.html" style="text-decoration: none"><img src="images/Lapse.png" class="logo"></a>
+                    <ul class="main-nav animated slideInDown" id="check-class">
+                       <li><a href="home.html">Home</a></li>
+                       <li><a href="Game.html" class="active">The Game</a></li>
+                       <li><a href="Rules.html">Rules</a></li>
+                       <li><a href="vision.html">Vision</a></li>
+                       <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                    <div class="main-content-header">
+                    <h1 id="sins" style="display: block; margin: 0; position: fixed; top:12%; color:#121212; text-transform: capitalize; word-spacing:1px; font-family: 'Kaushan Script', cursive;"></h1>
+                    <ul class='circle-container'>
+                    <li><img src='images/sloth_final.jpg'></li>
+                    <li><img src='images/Gluttony_Final.jpg'></li>
+                    <li><img src='images/greed_final.jpg'></li>
+                    <li><img src='images/lust_final.jpg'></li>
+                    <li><img src='images/Envy_Final.jpg'></li>
+                    <li><img src='images/Wrath_final.jpg'></li>
+                    <li><img src='images/pride_final.jpg'></li>
+                    </ul>
+                    
+</div>
+                    <a id="play-video" class="video-play-button" href="book/index.html"></a>
+                </div>
+            </nav>
+        </header>
+        <script type="text/javascript">
+		
+		function slideshow(){
+			 var x = document.getElementById('check-class');
+			 if(x.style.display === "none"){
+			 	x.style.display="block";
+			 }else{
+			 	x.style.display="none";
+			 }
+		}
+        </script>
+
+    </body>
+</html>

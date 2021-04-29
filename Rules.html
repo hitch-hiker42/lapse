@@ -1,0 +1,100 @@
+<html>
+    <head>
+    <title>Vision</title>
+        <meta name= viewport content= "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css">    
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+             var i = 0;
+             var txt = 'Life does not come with an instruction manual...';
+             var speed = 50;
+             function typeWriter() {
+            if (i < txt.length) {
+            document.getElementById("set").innerHTML += txt.charAt(i);
+                i++;
+            setTimeout(typeWriter, speed);
+            }
+             }
+    </script>
+    <style>
+    #set{
+        position: relative;
+        font-family: 'Kaushan Script', cursive;
+        font-size:32px;
+        text-align: center;
+        color:darkred;
+        margin: 0;
+        }
+        .box-content {
+    margin: 0;
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.bottom {
+    border-bottom: 2px ridge darkred;
+    color: #c0c0c0;
+}
+
+.right {
+    border-right: 2px ridge darkred;
+    color: #c0c0c0;
+}
+        .left{
+            position: fixed;
+            color: #c0c0c0;
+        }
+    </style>
+    </head>
+    <body onload="typeWriter()">
+        <header>            <nav>
+                <div class="row clearfix">
+                   <a href="index.html" style="text-decoration: none"><img src="images/Lapse.png" class="logo"></a>
+                    <ul class="main-nav animated slideInDown" id="check-class">
+                       <li><a href="home.html">Home</a></li>
+                       <li><a href="Game.html">The Game</a></li>
+                       <li><a href="Rules.html" class="active">Rules</a></li>
+                       <li><a href="vision.html">Vision</a></li>
+                       <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                    <div class="main-content-header">
+                    <img src="images/butter.gif" alt="Not Available!" width="100vw" style="position: relative; left:50%; transform: translate(-50%,0);"/>
+                    <p id="set"></p><br />
+        <div class="bottom">
+    <div class="box-content right">
+   The rules of the game are pretty simple. The game simulates life as it is lapsed through time from birth till death. You will be given a chance to live a life based on free will as you will make decisions to lead it through. We give you choices that life never did. You choose what happens next. As you do, it will set up a path for you to walk upon. Events will take place accoringly. You will win. You will lose. You will make friends. Relations will break. Whatever happens, you are your own creator.  The game is called 'Lapse'.
+    </div>
+    <div class="box-content left">
+    In the beginning, there was nothing. You will be given the work of a forger. You will choose your own vices and virtues. The distribution of human traits are based upon the Seven Deadly Sins and the Seven Cardinal Virtues. After you set up your morality, you will be asked for the ordinary: the name and the gender. Finally, you will rate your life (the one without free will) on a scale of 0 to 9, 0 being absolute dissapointment and 9 being a true fortune. A perfect life, if exists is rated a perfect 10. Seek and ye shall find the mystery permutation.
+    </div>
+</div>
+<div>
+    <div class="box-content right">
+    The game begins at last. You will be given 26 questions, with increasing level of intensity and risk. Each will present you with two choices and depending upon the decision, subsequent questions will follow. As you grow from birth through boyhood and adulthood to the final years of life, you will see the questions spanning your education, career, social life, relationships, and intellect. 
+    </div>
+    <div class="box-content left">
+    The choice you made before will affect your after, and your <em>will</em> will be tested as you pass through life question by question. In the end, your life would have been recorded in a journal for you to reflect upon. It will be rated accordingly against the lives lead by other users. It is to be seen if your free will can bend your life. Are you ready, to take the gamble?
+    </div>
+</div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <script type="text/javascript">
+		
+		function slideshow(){
+			 var x = document.getElementById('check-class');
+			 if(x.style.display === "none"){
+			 	x.style.display="block";
+			 }else{
+			 	x.style.display="none";
+			 }
+		}
+        </script>
+
+    </body>
+</html>

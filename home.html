@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Lapse</title>
+        <meta name= viewport content= "width=device-width, initial-scale=1.0">
+       <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">         
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <script>
+             var i = 0;
+             var txt = 'Where every decision counts.';
+             var speed = 60;
+             function typeWriter() {
+               if (i < txt.length) {
+                 document.getElementById("subtitle").innerHTML += txt.charAt(i);
+                 i++;
+                 setTimeout(typeWriter, speed);
+               }
+             }
+    </script>
+    </head>
+    <body onload="typeWriter()">
+        <header>
+            <nav>
+                <div class="row clearfix">
+                   <a href="index.html" style="text-decoration: none"><img src="images/Lapse.png" class="logo"></a>
+                    <ul class="main-nav animated slideInDown" id="check-class">
+                       <li><a href="home.html" class="active">Home</a></li>
+                       <li><a href="Game.html">The Game</a></li>
+                       <li><a href="Rules.html">Rules</a></li>
+                       <li><a href="vision.html">Vision</a></li>
+                     <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main-content-header">             
+                <h1><span class="colorchange">Life: </span><span id="subtitle" style="font-family: 'Kaushan Script', cursive;
+ text-transform: capitalize;"></span><br></h1>
+            <a href="signin.html" class="btn btn-full">Login</a>
+            <a href="signin.html" class="btn btn-full">Sign Up</a>
+            </div>
+        </header>
+        
+	<script type="text/javascript">
+		
+		function slideshow(){
+			 var x = document.getElementById('check-class');
+			 if(x.style.display === "none"){
+			 	x.style.display="block";
+			 }else{
+			 	x.style.display="none";
+			 }
+		}
+        </script>
+    </body>
+</html>
