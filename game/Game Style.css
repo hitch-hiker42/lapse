@@ -41,7 +41,10 @@ li:nth-child(2) {
 
 li a {
   text-decoration: none;
-  color: #fff;
+  color: dodgerblue;
+  font-family: BebasNeue;
+  font-size:48px;
+  text-align: center;
 }
 
 li a img {
