@@ -44,6 +44,23 @@ li a {
   color: #fff;
 }
 
+.imgObj {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+
+.imgObj p {
+  position: absolute;
+  font-size: 1em;
+  top: 43%;
+  width: 100%;
+  margin: auto;
+  color: #fff;
+}
+
 li a img {
   width: 250px;
   height: 250px;
