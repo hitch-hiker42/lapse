@@ -1,26 +1,23 @@
-body {
+body{
     background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/road.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
-
 @font-face {
     font-family: "BebasNeue";
     src: url(../fonts/BebasNeue-Regular.otf);
 }
-
-p {
+p{
     font-family: BebasNeue;
     font-size: 80px;
     color: #DB202C;
     text-align: center;
     margin: 0;
-}
-
+    }
 li {
   float: left;
-  opacity: 0.8;
+  opacity: 0.7;
   color: dodgerblue;
   font-family: BebasNeue;
   font-size:48px;
@@ -33,24 +30,36 @@ li {
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
 }
-
-#one {
-    padding:30px;
-    margin-top: 30px;
+li:nth-child(1) {
+  background-image: url(../images/Frow.png);
+}
+li:nth-child(2) {
+  background-image: url(../images/Frow.png);
 }
 
-.text {
-    text-align: center;
-    margin-left:10px;
+ul:hover li {
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
 }
-
-#two {
-    padding:30px;
-    margin: 30px;
+ul:hover li:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  transition-duration: 0.1818181818s;
 }
-
-#choice{
-    text-align: center;
-    margin-left:25%;
-    margin-top:3%;
+ul:hover li:hover ~ li {
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%);
 }
+#one{
+        padding:30px;
+        margin-top: 10px;
+    }
+#two{
+        padding:30px;
+        margin: 10px;
+    }
+    #choice{
+        text-align: center;
+        margin-left:25%;
+        margin-top:3%;
+    }
