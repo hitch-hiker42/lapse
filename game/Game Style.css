@@ -41,10 +41,6 @@ li:nth-child(2) {
 
 li a {
   text-decoration: none;
-  color: dodgerblue;
-  font-family: BebasNeue;
-  font-size:48px;
-  text-align: center;
 }
 
 .imgObj {
@@ -57,11 +53,13 @@ li a {
 
 .imgObj p {
   position: absolute;
-  font-size: 1em;
+  color: dodgerblue;
+  font-family: BebasNeue;
+  font-size:48px;
+  text-align: center;
   top: 43%;
   width: 100%;
   margin: auto;
-  color: #fff;
 }
 
 li a img {
